@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spotify Clone</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      background-color: #000;
+      color: white;
+      font-family: sans-serif;
+      margin: 50px;
+      padding: 0;
+    }
+    .container {
+      padding: 20px;
+    }
+    h1,
+    h2 {
+      color: #fff;
+    }
+    .trending,
+    .artists,
+    .albums,
+    .radio,
+    .charts {
+      margin-bottom: 20px;
+    }
+    .section-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      justify-content: space-between;
+      margin: auto;
+    }
+    .item {
+      padding: 10px;
+      border-radius: 8px;
+      text-align: center;
+      margin: auto;
+    }
+    .item p {
+      margin: 10px 0 0;
+    }
+    .section1 {
+      background: rgb(39, 38, 38);
+      border-radius: 50px;
+      border: 1px solid white;
+      text-align: center;
+      padding: 15px;
+      width: auto;
+      margin: 4px;
+      text-decoration: #fff;
+    }
+    .navbar li {
+      list-style-type: none;
+      display: inline-block;
+      overflow: hidden;
+    }
+    .item audio {
+      width: 160px;
+    }
+    .hover :hover {
+      background-color: rgb(56, 49, 49);
+      color: #e4e0e0;
+      cursor: pointer;
+    }
+    .navbar li:hover {
+      background-color: rgb(56, 49, 49);
+      color: #e4e0e0;
+      padding: 8px 7px;
+      border: none;
+      cursor: pointer;
+    }
+    .gap li {
+      list-style-type: none;
+      display: inline-block;
+      overflow: hidden;
+    }
+    .gap a {
+      text-decoration: none;
+      color: aliceblue;
+    }
+    .gap a:hover {
+      color: grey;
+    }
+  </style>
+</head>
+<body>
+  <div style="width: 100%;">
+    <header>
+      <iframe src="Spotifylk GIF by Bonfirelk.gif" frameborder="0" height="380px" width="90%"></iframe>
+    </header>
+    <div class="hover"
+      style="width: 10%; float: left; border-radius: 20px; background: rgb(27, 26, 26); height: 700px; text-align: center;">
+      <br><br><br> <img src="library-icon-12.jpg" alt="" height="50px" width="50px"> <br> <img src="newplus.webp" alt=""
+        height="50px" width="50px"> <br> <img src="like song.jpeg" alt="" height="50px" width="50px">
+    </div>
+    <div style="width: 90%; float: right;">
+      <div class="container">
+        <div>
+          <nav class="navbar">
+            <ul>
+              <li><img src="icons8-male-user-94.png" alt="" height="55px" width="55px"></li>
+              <li class="section1"><a href=""></a>All</li>
+              <li class="section1"><a href=""></a>Music</li>
+              <li class="section1"><a href=""></a>Podcasts</li>
+            </ul>
+          </nav>
+        </div>
+        <section class="trending">
+          <iframe src="Black And White Dancing GIF by littlekingdoms.gif" frameborder="0" height="500px"
+            width="45%"></iframe> <iframe src="iheartradio music festival GIF by iHeartRadio.gif" frameborder="0"
+            height="380px" width="50%"></iframe>
+          <nav class="gap">
+            <ul>
+              <li id="rgt">
+                <h2><a href="">Trending Songs</a></h2>
+            </ul>
+          </nav>
+          <div class="section-grid">
+            <div class="item"> <img src="2 khatole(Lofi Mix).jpeg" alt="photo">
+              <p><audio controls>
+                  <source src="2khatole.mp3" type="audio/mp3" style="height: auto; width: auto;">
+                </audio> <br>2 khatole(Lofi Mix) <br>
+                <font style="font-size: small; color: gray;">Masoom Sharma</font>
+              </p>
+            </div>
+            <div class="item"> <img src="Jhol - Maanu, Annural Khalid.jpeg" alt="photo">
+              <p><audio controls>
+                  <source src="Jhol.mp3" type="audio/mp3" style="height: auto; width: auto;">
+                </audio> <br>Jhol <br>
+                <font style="font-size: small; color: gray;">Maanu, Annural Khalid</font>
+              </p>
+            </div>
+            <div class="item"> <img src="newvaaste.jpeg" alt="photo">
+              <p><audio controls>
+                  <source src="vaaste.mp3" type="audio/mp3" style="height: auto; width: auto;">
+                </audio> <br> Vaaste <br>
+                <font style="font-size: small; color: gray;">Dabzee, Rishi Roy</font>
+              </p>
+            </div>
+            <div class="item">
+              <img src="Dheere Dheere - yo yo honey singh.jpeg" alt="photo">
+              <p><audio controls>
+                  <source src="Dheere_Dheere.mp3" type="audio/mp3" style="height: auto; width: auto;">
+                </audio> <br>Dheere Dheere <br>
+                <font style="font-size: small; color: gray;">Yo Yo Honey Singh</font>
+              </p>
+            </div>
+          </div>
+        </section>
+        <section class="artists">
+          <nav class="gap">
+            <ul>
+              <li id="rgt">
+                <h2><a href="">Popular Artists</a></h2>
+            </ul>
+          </nav>
+          <div class="section-grid">
+            <div class="item"> <img src="arijit-singh-3.webp" alt="Artist 1" height="100px" width="100px"
+                style="border-radius: 50%;">
+              <p>Arijit Singh</p>
+            </div>
+            <div class="item"> <img src="anirudh ravi.jpeg" alt="Artist 2" height="100px" width="100px"
+                style="border-radius: 50%;">
+              <p>Anirudh Ravi</p>
+            </div>
+            <div class="item"> <img src="yoyo honey.jpeg" alt="Artist 2" height="100px" width="100px"
+                style="border-radius: 50%;">
+              <p>Yo Yo Honey Singh</p>
+            </div>
+            <div class="item"> <img src="udit narayan.jpeg" alt="Artist 2" height="100px" width="100px"
+                style="border-radius: 50%;">
+              <p>Udit Narayan</p>
+            </div>
+            <div class="item"> <img src="pritam.jpeg" alt="Artist 1" height="100px" width="100px"
+                style="border-radius: 50%;">
+              <p>Pritam</p>
+            </div>
+            <div class="item"> <img src="atif aslam.jpeg" alt="Artist 1" height="100px" width="100px"
+                style="border-radius: 50%;">
+              <p>Atif Aslam</p>
+            </div>
+          </div>
+        </section>
+        <section class="albums">
+          <nav class="gap">
+            <ul>
+              <li id="rgt">
+                <h2><a href="">Popular Albums and Singles</a></h2>
+            </ul>
+          </nav>
+          <div class="section-grid">
+            <div class="item"> <img src="aashique.jpg" alt="Album 1">
+              <p><audio controls>
+                  <source src="Aashiqui.mp3" type="audio/mp3" style="height: auto; width: auto;">
+                </audio> <br>Aashiqui2 <br>
+                <font style="font-size: small; color: gray;">Mithoon,AnkitbTiwari,<br>Jeet Gannguli</font>
+              </p>
+            </div>
+            <div class="item"> <img src="ranjhaan.jpg" alt="Album 2">
+              <p><audio controls>
+                  <source src="Ranjhaan.mp3" type="audio/mp3" style="height: auto; width: auto;">
+                </audio> <br>Ranjhaan <br>
+                <font style="font-size: small; color: gray;">Sachet Parampara,<br>Parampara Tondon</font>
+              </p>
+            </div>
+            <div class="item"> <img src="sanam teri kasam.jpg" alt="Album 2">
+              <p><audio controls>
+                  <source src="Sanamterikasam.mp3" type="audio/mp3" style="height: auto; width: auto;">
+                </audio> <br>Sanam Teri Kasam <br>
+                <font style="font-size: small; color: gray;">Himesh Reshammiya</font>
+              </p>
+            </div>
+            <div class="item"> <img src="glory.jpg" alt="Album 2">
+              <p><audio controls>
+                  <source src="Glory.mp3" type="audio/mp3" style="height: auto; width: auto;">
+                </audio> <br>Glory <br>
+                <font style="font-size: small; color: gray;">Yo Yo Honey Singh</font>
+              </p>
+            </div>
+          </div>
+        </section>
+        <section class="radio">
+          <nav class="gap">
+            <ul>
+              <li id="rgt">
+                <h2><a href="">Popular Radio</a></h2>
+            </ul>
+          </nav>
+          <div class="section-grid">
+            <div class="item"> <img src="anuv jain.jpg" alt="Radio 1" height="190px" width="160px">
+              <p>Anuv Jain Radio</p>
+            </div>
+            <div class="item"> <img src="abhisek tongbram.jpg" alt="Radio 2" height="190px" width="160px">
+              <p>Abhisek Tongbram Radio</p>
+            </div>
+            <div class="item"> <img src="lifeinlimbo.jpg" alt="Radio 3" height="190px" width="160px">
+              <p>Life in Limbo</p>
+            </div>
+            <div class="item"> <img src="Linewithouthook.jpg" alt="Radio 3" height="190px" width="160px">
+              <p>Bruno Mars</p>
+            </div>
+          </div>
+        </section>
+        <section class="charts">
+          <nav class="gap">
+            <ul>
+              <li id="rgt">
+                <h2><a href="">Featured Charts</a></h2>
+            </ul>
+          </nav>
+          <div class="section-grid">
+            <div class="item"> <img src="topsongsglobal.jpg" alt="Chart 1">
+              <p>Top Songs-Global <br>
+                <font style="font-size: small; color: gray;">Your weekly update of the <br> most played tracks right..
+                </font>
+              </p>
+            </div>
+            <div class="item"> <img src="topsongsindia.jpg" alt="Chart 2">
+              <p>Top Songs-India <br>
+                <font style="font-size: small; color: gray;">Your weekly update of the <br> most played tracks right..
+                </font>
+              </p>
+            </div>
+            <div class="item"> <img src="top50global.jpg" alt="Chart 2">
+              <p>Top 50-Global <br>
+                <font style="font-size: small; color: gray;">Your daily update of the <br> most played tracks right..
+                </font>
+              </p>
+            </div>
+            <div class="item"> <img src="top50india.jpg" alt="Chart 2">
+              <p>Top 50-India <br>
+                <font style="font-size: small; color: gray;">Your daily update of the <br> most played tracks right..
+                </font>
+              </p>
+            </div>
+            <div class="item"> <img src="viral50global.jpg" alt="Chart 2">
+              <p>Viral 50-Global <br>
+                <font style="font-size: small; color: gray;">Your daily update of the <br> most played tracks right..
+                </font>
+              </p>
+            </div>
+          </div>
+        </section>
+        <footer>
+          <div style="background: aqua; height: 800px; width: 90%; padding: 20px 40px; border-radius: 30px;">
+            <p>
+              <font style="font-size: 50px; color: rgb(27, 26, 24); font-family: cursive;">
+                <hr size="5px" color="salmon">
+                <font style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;"><u>11th WEEK
+                    PROJECT</u></font> <br>DESIGN 2: Deploy a webpage using HTML and CSS that resembles the attached
+                image and call 'Spotify Clone'
+                <hr size="5px" color="salmon"><br>
+                <font style="font-family: fantasy;">NINGTHOUJAM THOUBA MEITEI <br> Roll: BC2027 <br>Section: B <br>BCA
+                  4th Semester</font>
+              </font>
+            </p>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
